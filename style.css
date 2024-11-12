@@ -1,0 +1,502 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "josh",sans-serif;
+
+}
+:root{
+    --bg-color:#ffffff;
+    --main-color:#4b9e22;
+    --text-color:#000000;
+    --other-color:#83868c;
+    --second-color:#d9d9d9;
+
+    --h1-font:5.5rem;
+    --h2-font:2.8rem;
+    --p-font:1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+header{
+    position:relative;
+    width:100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: var(--bg-color);
+    box-shadow:0 2px 5px -2px #0000001a;
+    transition: all .6s ease;
+
+
+}
+.logo img{
+    max-width: 160px;
+    width:80%;
+    height:50%;
+    object-fit:contain ;
+
+}
+.navlist{
+    display:flex;
+}
+.navlist a{
+    display: inline-block;
+    font-size: var(--p-font);
+    color:var(--text-color);
+    margin:0 30px;
+    padding:2px 0;  
+    border-bottom: 2px solid transparent;
+    transition: all .6s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+.navcontent a{
+    display: inline-block;
+    font-size: 23px;
+    color:var(--text-color);
+    margin:0 10px;
+    transition: all .6s ease;
+}
+.navcontent a:hover{
+    transform: scale(1.1);
+    color: var(--main-color);
+}
+#menuicon{
+    font-size: 32px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 10px;
+    display: none;
+
+
+}
+section{
+
+    padding:80px 10% 80px;
+
+
+}
+.hero{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:url(bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+
+}
+.herotext h1{
+     font-size: var(--h1-font);
+     font-weight: 700;
+     color:white;
+     margin: 10px 0 20px;
+     line-height: 1;
+}
+.herotext h4{
+    font-size: 22px;
+    font-weight: 600;
+    color:white;
+    letter-spacing: 4px;
+
+}
+.herotext p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5s;
+    color:white;
+    margin-bottom: 30px;
+
+}
+.btn{
+    display: inline-block;
+    padding: 11px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid var(--bg-color);
+    color: var(--bg-color);
+    transition: all .6s ease;
+
+}
+.btn:hover{
+    background-color:wheat ;
+    color: var(--text-color);
+}
+
+.centertext{
+    text-align: center;
+
+}
+.centertext h6{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--main-color);
+
+}
+.centertext h2{
+    font-size: var(--h2-font);
+    font-weight: 600;
+
+}
+.storecontent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items:center ;
+    gap :2rem;
+    margin: top 4rem; 
+    cursor: pointer;
+
+}
+
+.col{
+    padding: 10px;
+    border: 1px solid var(--second-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+    transition: all.6s ease;
+
+}
+.colimg img{
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.coltext{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.coltext p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+}
+.col:hover{
+    transform:scale(1.04) translateY(-4px);
+    border: 1px solid var((var(--main-color)));
+}
+
+.banner{
+    padding:10px 0 10px;
+
+}
+.bannercontext{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.bannerimg{
+    position: relative;
+
+}
+.bannerimg img{
+    width:100%;
+    height: auto;
+    cursor: pointer;
+
+
+}
+.bannerin{
+    position:absolute ;
+    top: 50%;
+    left:7% ;
+    transform: translateY(-50%);
+
+}
+.bannerin h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin:10px 0;
+
+
+}
+.bannerin h5{
+
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.bbtn{
+    padding:10px 27px;
+    display: inline-block;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top:10px;
+    transition: all .6s ease;
+
+
+}   
+
+.bbtn:hover{
+    background: var(--main-color);
+
+}
+
+
+.sellercontent{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,auto));
+    align-items: center;
+    gap: 1.7rem;
+    margin-top: 4rem;
+
+}
+
+.rowimg{
+    overflow: hidden;
+
+}
+.rowimg img{
+    display: block;
+    width: 100%;
+    transition: transform 0.6s;
+    cursor: pointer;
+
+}
+.rowimg img:hover{
+    transform: scale(1.2);
+}
+
+.row{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.row h5{
+    margin-top:16px ;
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin-bottom: 7px;
+
+}
+
+.row h6{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--main-color);
+
+}
+.row .sbtn a{
+    position: absolute;
+    bottom:73px;
+    left: 0;
+    right: 0;
+    padding: 13px;
+    background:  rgb(0,0,0,0.8);
+    color: var(--bg-color);
+    transition: opacity 0.5s;
+    opacity:0;
+
+}
+
+.row .sbtn a:hover{
+    opacity: 1;
+}
+
+/* animation */
+.animation{
+    background-color: black;
+}
+
+.banner {
+    /* width: 110%; */
+    /* height: 100%; */
+    height: 90%;
+    position: relative;
+    margin: auto;
+    /* top: 50%; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    /* margin:auto; */
+    width: 110px;
+    height: 250px;
+    top: 50%;
+    left: calc(50% - 11px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotatey(0deg);
+    }
+
+    to {
+        transform: perspective(1000px) rotatey(360deg);
+    }
+}
+
+.item {
+    position: absolute;
+    /* inset: 0 0 0 0;   */
+    transform: rotateY(
+            calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+        )
+        translateZ(500px);
+}
+
+.item img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.page2 {
+    background-image: url(assets/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.main1 {
+    backdrop-filter: blur(5px);
+    /* top: 40rem; */
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 50px 6px 15px;
+    font-family: "Dancing Script", cursive;
+}
+
+
+
+/* reservationpart */
+
+
+.reserve {
+    /* margin-top: 100px; */
+    position: relative;
+    isolation: isolate;
+    background-color:grey;
+    padding: 50px 0;
+    /* height:100px;
+    width: 100px; */
+}
+.contact h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+    text-align: center;
+    margin: 20px;
+}
+.contact form {
+    max-width: 400px;
+    margin-inline: auto;
+    /* margin-top: grid; */
+    display: grid;
+    gap: 1;
+}
+.contact input {
+    padding: 0.75rem 1rem;
+    /* outline: none; */
+    border: black;
+    font-size: 1rem;
+    color: black;
+}
+.contact input::placeholder {
+    color: black;
+}
+.reserve img {
+    display: none;
+}
+.contact .btn {
+    position: relative;
+    text-align: center;
+    background-color: orange;
+    width: 180px;
+    border-radius: 50px;
+    margin: 30px auto;
+}
+
+
+.footer{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap:1rem;
+    background-image: url(assets/cta.webp);
+
+}
+.footerbox .logo img{
+    width:170px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.footerbox h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height:1.3 ;
+    color: white;
+
+
+}
+.icons i{
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+    font-size: 23px;
+    transition: all .7s ease;
+
+}
+.icons i:hover{
+    color: var(--main-color);
+    transform: rotate3d(0,0,1,360deg);
+
+}
+.footerbox h3{
+    color: white;
+}
+.footerbox a{
+    color: white;
+}
+
+
